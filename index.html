@@ -11,48 +11,53 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>  
-    <header>
-        <a href=""> 
+    <header class="header">
+        <nav class="navigation">
+          <a class="logo link" href=""> 
             <img src="./img/logo.svg" alt="лого сайта">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">О нас</a>
+          </a>
+            <ul class="nav-list  list">
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#about">О нас</a>
                 </li>
-                <li>
-                    <a href="#prices">Услуги и цены</a>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#prices">Услуги и цены</a>
                 </li>
-                <li>
-                    <a href="#masters">Мастера</a>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#masters">Мастера</a>
                 </li>
-                <li>
-                    <a href="#contact">Контакты</a>
+                <li class="nav-list-item">
+                    <a class="nav-list-link link" href="#contact">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <a href="tel:+380441111111">+380441111111</a>
-        <button type="button">онлайн-запись</button>
+        <a class="contact-number" href="tel:+380441111111">+380441111111</a>
+        <button class="modal-btn" type="button">онлайн-запись</button>
     </header>
     <main>
-        <section>
-            <ul>
-                <li><a href="" target="_blank">Instagram</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-            </ul>
-            <p lang="en">A hair salon for men i Kiev</p>
-            <h1 lang="en">BarberShop</h1>
-            <p>
-                Мы эксперты в модных мужских стрижках. <br>
-                Работаем быстро, осторожно и со вкусом
-            </p>
+        <!-- отстал-->
+        <section class="hero">
+            <div class="hero-left-side"> 
+                <ul class=" list">
+                    <li><a class="link" href="" target="_blank">Instagram</a></li>
+                    <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="hero-right-side">
+                <p lang="en">A hair salon for men i Kiev</p>
+                <h1 lang="en">BarberShop</h1>
+                <p class="descripse">
+                    Мы эксперты в модных мужских стрижках. <br>
+                    Работаем быстро, осторожно и со вкусом
+                </p>
+            </div>
         </section>
         
         <section id="about">
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/about-img-1.jpg" 
-                    alt="барбер бреет шею"
+                     alt="барбер бреет шею"
                      width="270" 
                      height="445">
                     </li>
@@ -78,7 +83,7 @@
         <section id="prices">
             <p>Проведи время в компании лучших мастеров</p>
             <h2>Услуги и цены</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <p>Мужская стрижка</p>
                     <p>от 300грн</p>
@@ -116,7 +121,7 @@
         </section>
         <!--2 урок-->
         <section>
-            <ul>
+            <ul class="list">
                 <li>
                     <span>600</span><!--+ плюс надо поставить 600+-->
                     <p>Довольных клиентов в день</p>
@@ -141,7 +146,7 @@
         <section id="masters">
             <p>для настоящих ценителей атмосферы</p>
             <h2>Наши мастера</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/masters-img1.jpg" 
                     alt="барбер стрижет клиента"
@@ -172,7 +177,7 @@
             <p>На латинском языке “барба” означает “борода”</p>
             <!--hidden делает заголовок скрытым-->
             <h2 hidden>Галерея</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./img/gallery-img1.jpg"
                      alt="барбер стрижет клиента"
@@ -205,7 +210,7 @@
         <section id="contact">
             <h2>Контакты</h2>
             <address>
-                <ul>
+                <ul class="list">
                     <li>
                         <a href="https://goo.gl/maps/zC7bfjL1phTQybGv7" 
                         target="_blank"
@@ -222,9 +227,9 @@
     </main>  
     <footer>
         <p>&copy; &#128514; Copyright 2020</p>
-        <ul>
-            <li><a href="" target="_blank">Instagram</a></li>
-            <li><a href="" target="_blank">Youtube</a></li>
+        <ul class="list">
+            <li><a class="link" href="" target="_blank">Instagram</a></li>
+            <li><a class="link" href="" target="_blank">Youtube</a></li>
         </ul>
     </footer>
 </body>
