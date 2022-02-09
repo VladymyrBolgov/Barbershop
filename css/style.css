@@ -143,5 +143,95 @@ body {
 /* ========= END HERO ========= */
 
 /* ========= START ABOUT ========= */
+.about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+}
 
+/* ========= END ABOUT ========= */
 
+/* ========= START SERVICES ========= */
+.services-list-name,
+.services-list-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: rgb(var(--primary-text-color-theme-dark));
+}
+
+/* ========= END SERVICES ========= */
+
+/* ========= START ADVANTAGES ========= */
+.advantages-list-quantity {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-list-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--secondary-text-color-theme-light);
+}
+
+/* ========= END ADVANTAGES ========= */
+
+/* ========= START EMPLOYEES ========= */
+.employees-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.employees-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+/* ========= END EMPLOYEES ========= */
+
+/* ========= START HERO ========= */
+.contact-list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: rgb(var(--primary-text-color-theme-dark));
+}
+
+.contact-info-date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: rgb(var(--primary-text-color-theme-dark));
+}
+
+/* ========= END HERO ========= */
+
+/* ========= START FOOTER ========= */
+.copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: rgb(var(--primary-text-color-theme-dark));
+}
+
+/* ========= END FOOTER ========= */
