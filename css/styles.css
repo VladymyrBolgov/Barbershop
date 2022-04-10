@@ -702,14 +702,15 @@ address {
   background-color: var(--accent-color);
   box-shadow: inset 0 0 0 4px #ffffff;
 }
-/*
+/* для таба следующий код*/
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
+  outline: 1px solid rgba(0, 0, 255, 0.5);
+}
+
 .contact-form-checkbox-wrapper {
   margin-bottom: 20px;
 }
 
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
-  outline: 1px solid rgba(0, 0, 255, 0.5);
-}
 .contact-form-submit-btn {
   display: block;
   margin: 0 auto;
@@ -731,4 +732,4 @@ address {
 .contact-form-submit-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
-}*/
+}
