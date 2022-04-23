@@ -1,6 +1,6 @@
 :root {
-  --primary-font-family: "Open Sans", sans-serif;
-  --secondary-font-family: "Raleway", sans-serif;
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --primary-text-color-theme-dark: 157, 164, 189;
   --secondary-text-color-theme-dark: #ffffff;
   --primary-text-color-theme-light: #555555;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.contact-form-checkbox-label, .social-list-link, .social-links-list {
+.social-links-list, .social-list-link, .contact-form-checkbox-label {
   display: flex;
   align-items: center;
 }
@@ -70,11 +70,28 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .modal-btn {
@@ -92,6 +109,7 @@ address {
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
 }
+
 .modal-btn:hover, .modal-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
@@ -110,7 +128,7 @@ address {
   width: 60px;
   height: 1px;
   background-color: #303030;
-  content: "";
+  content: '';
   flex-shrink: 0;
   margin-right: 40px;
 }
@@ -127,11 +145,13 @@ address {
   color: var(--secondary-text-color-theme-light);
   transition: color 250ms linear;
 }
+
 .social-links-list-link:hover, .social-links-list-link:focus {
   color: var(--accent-color);
 }
 
 .overtitle {
+  display: flex;
   align-items: center;
   font-weight: 600;
   font-size: 11px;
@@ -140,16 +160,18 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 .overtitle::before {
   width: 60px;
   height: 1px;
-  content: "";
+  content: '';
   margin-right: 20px;
 }
 
 .overtitle-theme-dark {
   color: rgba(var(--primary-text-color-theme-dark), 0.6);
 }
+
 .overtitle-theme-dark::before {
   background-color: rgba(var(--primary-text-color-theme-dark), 0.6);
 }
@@ -157,6 +179,7 @@ address {
 .overtitle-theme-light {
   color: var(--secondary-text-color-theme-light);
 }
+
 .overtitle-theme-light::before {
   background-color: var(--secondary-text-color-theme-light);
 }
@@ -217,6 +240,7 @@ address {
   border-radius: 50%;
   transition: background-color 250ms linear;
 }
+
 .social-list-link:hover, .social-list-link:focus {
   background-color: #303030;
 }
@@ -225,7 +249,9 @@ address {
   fill: var(--secondary-text-color-theme-light);
   transition: fill 250ms linear;
 }
-.social-list-link:hover .social-list-icon, .social-list-link:focus .social-list-icon {
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: var(--accent-color);
 }
 
@@ -238,6 +264,7 @@ address {
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 500ms linear, visibility 500ms linear;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -251,7 +278,7 @@ address {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 580px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 40px;
 }
 
@@ -290,6 +317,7 @@ address {
   border-radius: 5px;
   transition: border-color 250ms linear;
 }
+
 .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -306,6 +334,7 @@ address {
   background-color: teal;
   transition: background-color 250ms linear;
 }
+
 .contact-form-input:focus + .contact-form-icon {
   background-color: var(--accent-color);
 }
@@ -320,10 +349,12 @@ address {
   border-radius: 5px;
   transition: border-color 250ms linear;
 }
+
 .contact-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
 }
+
 .contact-form-message::placeholder {
   text-transform: uppercase;
   color: rgba(117, 117, 117, 0.5);
@@ -336,18 +367,21 @@ address {
 .contact-form-checkbox-label {
   font-size: 14px;
 }
+
 .contact-form-checkbox-label::before {
   display: inline-block;
   width: 18px;
   height: 18px;
   border: 1px solid #555555;
   cursor: pointer;
-  content: "";
+  content: '';
   margin-right: 10px;
 }
+
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   outline: 1px solid rgba(0, 0, 255, 0.5);
 }
+
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-color: var(--accent-color);
   box-shadow: inset 0 0 0 4px #ffffff;
@@ -370,65 +404,98 @@ address {
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
 }
+
 .contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
 }
 
 .header {
-  position: absolute;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #303030;
 }
 
 .header__logo {
-  margin-right: 70px;
+  fill: #ffffff;
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 40px;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-list__link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  transition: color 250ms linear;
-}
-.nav-list__link:hover, .nav-list__link:focus {
-  color: var(--accent-color);
+@media screen and (max-width: 1199px) {
+  .contact-number {
+    display: none;
+  }
 }
 
-.contact-number {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  margin-left: auto;
-  margin-right: 40px;
-  color: #ffffff;
-  transition: color 250ms linear;
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+  .header__modal-btn {
+    display: none;
+  }
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu-btn__icon {
+    fill: #ffffff;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: bisque;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu__container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
-.contact-number:hover, .contact-number:focus {
-  color: var(--accent-color);
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    background-color: transparent;
+  }
+  .header__logo {
+    fill: #303030;
+  }
 }
 
 .hero-container {
@@ -510,17 +577,29 @@ address {
   padding: 30px 40px;
   margin-bottom: 50px;
 }
+
 .services-list:first-child {
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
+
 .services-list:last-child {
   background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .services-list-item {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
+
+.services-list-item::before {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(var(--primary-text-color-theme-dark), 0.12);
+  margin: 0 6px;
+  content: '';
+}
+
 .services-list-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -532,6 +611,10 @@ address {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.services-list-name {
+  order: -1;
 }
 
 .services-modal-btn {
@@ -564,6 +647,7 @@ address {
   padding: 21px;
   background-color: #f7f7f7;
 }
+
 .advantages-list-item:nth-child(even) {
   margin-top: 30px;
 }
@@ -688,4 +772,5 @@ address {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
